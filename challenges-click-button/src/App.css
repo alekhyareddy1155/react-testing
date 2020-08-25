@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+
+.error {
+  font-size: 150%;
+  color: #ff0000da;
+}
+
+
+.hidden {
+  display: none;
+}
