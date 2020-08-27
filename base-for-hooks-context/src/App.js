@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import hookActions from './actions/hookActions';
+import Input from './Input';
 
 /**
  * Reducer to update state, called automatically by dispatch
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div className="container" data-test="component-app">
+      <Input secretWord={state.secretWord} />
     </div>
   );
 }
