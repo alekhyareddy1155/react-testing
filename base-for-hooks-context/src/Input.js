@@ -15,20 +15,7 @@ function Input({secretWord}) {
         />
         <button 
           data-test="submit-button"
-          onClick={(evt) => {
-            evt.preventDefault();
-            // // update guessedWords
-            // const letterMatchCount = getLetterMatchCount(currentGuess, secretWord);
-            // const newGuessedWords = [...guessedWords, { guessedWord: currentGuess, letterMatchCount }];
-            // setGuessedWords(newGuessedWords);
-
-            // // check against secretWord and update success if needed
-            // if (currentGuess === secretWord) {
-            //   setSuccess(true);
-            // }
-            // // clear input box
-            // setCurrentGuess("");
-          }}
+          
           className="btn btn-primary mb-2">
           {/* {stringsModule.getStringByLanguage(language, 'submit')} */}
           submit
