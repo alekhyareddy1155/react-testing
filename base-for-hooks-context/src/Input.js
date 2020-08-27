@@ -15,8 +15,8 @@ function Input({secretWord}) {
         />
         <button 
           data-test="submit-button"
-          onClick={() => {
-            
+          onClick={(event) => {
+            event.preventDefault();
             // // update guessedWords
             // const letterMatchCount = getLetterMatchCount(currentGuess, secretWord);
             // const newGuessedWords = [...guessedWords, { guessedWord: currentGuess, letterMatchCount }];
