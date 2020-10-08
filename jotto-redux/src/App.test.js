@@ -11,7 +11,8 @@ import App, { UnconnectedApp } from './App';
  */
 const setup = (state={}) => {
   const store = storeFactory(state);
-  const wrapper = shallow(<App store={store} />).dive().dive();
+  const wrapper = shallow(<App store={store} />).dive().dive()
+  ;
   return wrapper;
 }
 
@@ -21,6 +22,7 @@ describe('redux properties', () => {
     const wrapper = setup({ success });
     const successProp = wrapper.instance().props.success;
     expect(successProp).toBe(success);
+
   });
   test('has access to `secretWord` state', () => {
     const secretWord = 'party';
@@ -52,7 +54,7 @@ test('`getSecretWord` runs on App mount', () => {
 
   // set up app component with getSecretWordMock as the getSecretWord prop
   const wrapper = shallow(<UnconnectedApp {...props} />);
-
+  console.log(wrapper.debug());
   // run lifecycle method
   wrapper.instance().componentDidMount();
 
